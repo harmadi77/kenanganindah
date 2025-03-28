@@ -26,7 +26,7 @@ body {
   padding: 1.4rem 7%;
   background-color: rgba(2, 1, 1, 0.8);
   border-bottom: 1px solid #574331 9 var(--primary);
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   left: 0;
   right: 0;
@@ -135,4 +135,8 @@ body {
   html {
     font-size: 55%;
   }
+}
+
+.about {
+  padding: 10px;
 }
