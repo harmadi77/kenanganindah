@@ -1,5 +1,5 @@
 :root {
-  --primary: #e0ad4fd8;
+  --primary: #5424e6d8;
   --bg: #010101;
 }
 
@@ -27,7 +27,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.4rem 7%;
+  padding: 1.4rem 8%;
   background-color: rgba(1, 1, 1, 0.8);
   border-bottom: 1px solid #574331;
   position: fixed;
@@ -88,7 +88,7 @@ body {
 
 /* hero section */
 .hero {
-  min-height: 100vh;
+  min-height: 130vh;
   display: flex;
   align-items: center;
   background-image: url('../img/wongliyo-ngertiopo.jpeg.jpg');
@@ -131,7 +131,7 @@ body {
   margin-top: 1rem;
   line-height: 1.4;
   font-weight: 100;
-  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  text-shadow: 1px 1px 3px rgba(2, 2, 3, 0.5);
   mix-blend-mode: difference;
 }
 
@@ -151,10 +151,11 @@ body {
 }
 
 /* about section */
+
 .about, 
 .menu, 
 .contact {
-  padding: 10rem 7% 1.4rem;
+padding: 19rem 7% 1.4rem;
 }
 
 .about h2, 
@@ -227,7 +228,7 @@ body {
 
 .menu .row .menu-card {
   text-align: center;
-  padding-bottom: 4rem;
+  padding-bottom: 1rem;
 
 }
 
@@ -239,7 +240,7 @@ body {
 
 
 .menu .row .menu-card .menu-card-title {
-margin-top: 1rem auto 1rem;
+margin: 1.5rem auto 0.5rem;
 }
 
 /* contact section */
@@ -324,7 +325,7 @@ footer .links a {
 
 /* media queris */
 /* leptop */
-@media (max-width: 13654px) {
+@media (max-width: 1366px) {
   html {
     font-size: 75%;
   }
@@ -394,7 +395,7 @@ footer .links a {
   }
 
   .menu p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 
 
