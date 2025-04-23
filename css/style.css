@@ -1,6 +1,6 @@
 :root {
-  --primary: #583636d8;
-  --bg: #221313ce;
+  --primary: #e0ad4fd8;
+  --bg: #010101;
 }
 
 * {
@@ -12,11 +12,14 @@
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "poppins", sans-serif;
   background-color: var(--bg);
-  color: #ffffff;
-  min-height: 2000px;
+  color: #fff;
 }
 
 /* navbar */
@@ -25,8 +28,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1.4rem 7%;
-  background-color: rgba(2, 1, 1, 0.8);
-  border-bottom: 1px solid #574331 9 var(--primary);
+  background-color: rgba(1, 1, 1, 0.8);
+  border-bottom: 1px solid #574331;
   position: fixed;
   top: 0;
   left: 0;
@@ -35,7 +38,7 @@ body {
 }
 
 .navbar .navbar-logo {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 700;
   color: #fff;
   font-style: italic;
@@ -48,7 +51,7 @@ body {
 .navbar .navbar-nav a {
   color: #fff;
   display: inline-block;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   margin: 0 1rem;
 }
 
@@ -57,19 +60,21 @@ body {
 }
 
 .navbar .navbar-nav a::after {
-  content: "";
+  content: " ";
   display: block;
   padding-bottom: 0.5rem;
   border-bottom: 0.1rem solid var(--primary);
   transform: scaleX(0);
+  transition: 0.2s linear;
 }
 
 .navbar .navbar-nav a:hover::after {
   transform: scaleX(0.5);
-  transition: 0.2s linier;
+
 }
+
 .navbar .navbar-extraa a {
-  color: #f8f8f8;
+  color: #fff;
   margin: 0 0.5rem;
 }
 
@@ -77,16 +82,16 @@ body {
   color: var(--primary);
 }
 
-#hamburger menu {
+#hamburger-menu {
   display: none;
 }
 
 /* hero section */
 .hero {
-  min-height: 115vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url('../img/wongliyo\ ngerti\ opo-ha.jpg.jpg');
+  background-image: url('../img/wongliyo-ngertiopo.jpeg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -94,14 +99,15 @@ body {
 
 }
 
-.hero::after{
+.hero::after {
   content: '';
   display: block;
   position: absolute;
   width: 100%;
-  height: 100%;
-   background: linear-gradient(0deg,rgb(1, 1, 3, 1) 3%,
-    rgba(235, 235, 235, 0) 25%)
+  height: 30%;
+  bottom: 0;
+   background: linear-gradient(0deg, rgba(1, 1, 3, 1) 8%,
+    rgba(255,255,255, 0) 50%)
 }
 
 .hero .content {
@@ -117,7 +123,7 @@ body {
 }
 
 .hero .content h1 span {
-  columns: var(--primary);
+  color: var(--primary);
 }
 
 .hero .content p {
@@ -126,6 +132,7 @@ body {
   line-height: 1.4;
   font-weight: 100;
   text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  mix-blend-mode: difference;
 }
 
 .hero .content .cta{
@@ -135,16 +142,189 @@ body {
   font-size: 1.4rem;
   color: #fff;
   background-color: var(--primary);
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 
 
 
 
 }
 
-/* media queris */
+/* about section */
+.about, 
+.menu, 
+.contact {
+  padding: 10rem 7% 1.4rem;
+}
 
+.about h2, 
+.menu h2, 
+.contact h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 3rem;
+}
+
+.about h2 span, 
+.menu h2 span,
+.contact h2 span {
+  color: var(--primary);
+}
+
+.about .row {
+  display: flex;
+}
+
+.about .row .about-img {
+  flex: 1 1 35rem;
+}
+
+.about .row .about-img img  {
+  width: 100%;
+}
+
+.about .row .content {
+  flex: 1 1 50rem;
+  padding: 0 1rem;
+}
+
+.about .row .content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.about .row .content p {
+  margin-bottom: 0.8rem;
+  font-size: 1.4rem;
+  font-weight: 100;
+  line-height: 1.6;
+
+}
+
+/* menu section */
+.menu h2, 
+.contact h2 {
+  margin-bottom: 1rem;
+}
+
+.menu p, 
+.contact p {
+  text-align: center;
+  max-width: 30rem;
+  margin: auto;
+  font-weight: 100;
+  line-height: 1.6;
+}
+
+
+.menu .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  justify-content: center;
+}
+
+
+.menu .row .menu-card {
+  text-align: center;
+  padding-bottom: 4rem;
+
+}
+
+
+.menu .row .menu-card img {
+  border-radius: 50%;
+  width: 80%;
+}
+
+
+.menu .row .menu-card .menu-card-title {
+margin-top: 1rem auto 1rem;
+}
+
+/* contact section */
+.contact .row {
+  display: flex;
+  margin-top: 2rem;
+  background-color: #333;
+}
+
+.contact .row .map {
+  flex: 1 1 45rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.contact .row form {
+  flex: 1 1 45rem;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.contact .row form .input-group {
+display: flex;
+align-items: center;
+margin-top: 2rem;
+background-color: var(--bg);
+border: 1px solid #e7e7e7;
+padding-left: 1.5rem;
+}
+
+.contact .row form .input-group input {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  background: none;
+  color:#fff;
+}
+
+.contact .row  form .btn {
+margin-top: 3rem;
+display: inline-block;
+padding: 1rem 3rem;
+font-size: 1.6rem;
+color: #fff;
+background-color: var(--primary);
+cursor: pointer;
+}
+
+/* footer  */
+footer {
+  background-color: var(--primary);
+  text-align: center;
+  padding: 1.5rem 0 3rem;
+  margin-top: 4rem;
+}
+
+footer .socials {
+  padding: 1rem 0;
+}
+
+footer .socials a {
+  color: #fff;
+  margin: 1.2rem;
+}
+
+
+footer .socials a:hover,
+footer .links a:hover {
+  color: var(--bg);
+}
+
+
+footer .links {
+  margin-bottom: 1.4rem;
+}
+
+footer .links a {
+  color: #fff;
+  padding: 1rem 1rem;
+}
+
+
+/* media queris */
 /* leptop */
-@media (max-width: 1366px) {
+@media (max-width: 13654px) {
   html {
     font-size: 75%;
   }
@@ -164,7 +344,7 @@ body {
     position: absolute;
     top: 100%;
     right: -100%;
-    background-color: #f8f8f8;
+    background-color: #fff;
     width: 30rem;
     height: 100vh;
     transition: 0.3s;
@@ -189,8 +369,49 @@ body {
    .navbar .navbar-nav a:hover::after {
       transform: scaleX(0.2);
     }
+
+    .about .row {
+      flex-wrap: wrap;
+    }
   
+    .about .row .about-img img {
+      height: 70rem;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .about .row .content {
+      padding: 0;
+    }
+
+    .about .row .content h3 {
+      margin-top: 1rem;
+      font-size: 2rem;
+    }
+
+    .about .row .content p {
+      font-size: 1.6rem;
+  }
+
+  .menu p {
+    font-size: 1.2rem;
+  }
+
+
+  .contact .row {
+    flex-wrap: wrap;
+  }
+
+  .contact .row .map {
+    height: 30rem;
+  }
+
+  .contact .row  form {
+    padding-top: 0;
+  }
 }
+
+
 
 /* mobile phone */
 @media (max-width: 450px) {

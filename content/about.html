@@ -20,13 +20,15 @@
     <!-- my style -->
     <link rel="stylesheet" href="../css/style.css" />
   </head>
+
   <body>
     <!-- navbar start -->
+
     <nav class="navbar">
       <a href="#" class="navbar-logo">kenangan<span>Indah</span></a>
 
       <div class="navbar-nav">
-        <a href="#">home</a>
+        <a href="#home">Home</a>
         <a href="#about">tentang kami</a>
         <a href="#menu">menu</a>
         <a href="#contact">kontak</a>
@@ -43,20 +45,104 @@
     <!-- hero section start -->
      <section class="hero" id="home">
       <main class="content">
-      <h1>Ini tentang Kenangan<span>Indah</span></h1>
+      <h1>Ini tentang Kenangan <span>Indah</span></h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. accusantium, enim.</p>
-      <a href="#" c;ass="cta">beli sekarang</a>
+      <a href="#" class="cta">beli sekarang</a>
       </main>
      </section>
 
      <!-- hero section end -->
 
-    <!-- feather icon -->
+
+
+     <!-- about section start-->
+      <section id="about" class="about">
+        <h2><span>tentang </span>kami</h2>
+
+
+        <div class="row">
+          <div class="about-img">
+          <img src="../img/tentang_kami.jpg" alt="tentang_kami">
+          </div>
+
+          <div class="content">
+            <h3>Ini tentang green tea kami</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque explicabo laboriosam sequi placeat deserunt molestias!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit animi dicta excepturi cupiditate amet hic repellat quasi dolores possimus accusantium!</p>
+
+          </div>
+        </div>
+      </section>
+
+     <!-- about section end-->
+
+     <!-- menu section start -->
+
+     <section id="menu"  class="menu">
+      <h2><span>menu</span>kami</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dolor laborum aperiam, sequi provident vitae?</p>
+
+      <div class="row">
+        <div class="menu-card">
+          <img src="../img/menu/1.jpg.jpg" alt="tea" class="menu-card-img">
+          <h3 class="menu-card-title">- tea -</h3>
+          <p class="menu-card price">IDR 8K</p>
+        </div>
+      </div>
+    </section>
+
+     <!-- menu section end -->
+
+     <!-- contact section start -->
+      <section id="contact" class="contact">
+        <h2><span>kontak</span>kami</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dolor laborum aperiam, sequi provident vitae?</p>
+        
+        <div class="row">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4406.672979190259!2d111.00028802610781!3d-7.720594069189517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a2687237f89a3%3A0x97d765eacf295399!2sNgrandu%2C%20Karangbangun%2C%20Kec.%20Jumapolo%2C%20Kabupaten%20Karanganyar%2C%20Jawa%20Tengah!5e1!3m2!1sid!2sid!4v1745369784184!5m2!1sid!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+
+          <form action="">
+            <div class="input-group">
+              <i data-feather="user"></i>
+              <input type="text" placeholder="masukan nama">
+            </div>
+            <div class="input-group">
+              <i data-feather="mail"></i>
+              <input type="text" placeholder="masukan email">
+            </div>
+            <div class="input-group">
+              <i data-feather="phone"></i>
+              <input type="text" placeholder="nomer henphone">
+            </div>
+            <button type="submit" class="btn">kirim pesan</button>
+          </form>
+        </div>
+      </section>
+    <!-- contact section end -->
+
+     <!-- footer start -->
+      <footer>
+        <div class="socials">
+          <a href="#"><i data-feather="instagram"></i></a>
+          <a href="#"><i data-feather="facebook"></i></a>
+        </div>
+
+      <div class="links">
+     <a href="home">home</a>
+     <a href="about">tentang kami</a>
+     <a href="menu">menu</a>
+     <a href="contact">kontak</a>
+      </div>
+
+      </footer>
+     <!-- footer end -->
+
+     <!-- feather icon -->
     <script>
       feather.replace();
     </script>
 
     <!-- my javascript -->
-    <script src="../js/script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

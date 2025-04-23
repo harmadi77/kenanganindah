@@ -2,13 +2,14 @@
 const navbarnav = document.querySelector(".navbar-nav");
 // ketika hamburger menu di klik
 document.querySelector("#hamburger-menu").onclick = () => {
-  navbarnav.classlist.toggle("active ");
+  navbarnav.classlist.toggle("active");
 };
 
 // klik di luar sidebar untuk menghilangkan nav
-const hamburger = document.querySelector("#hamburger-menu");
+const hamburger = document.querySelector('#hamburger-menu');
 
-document.addEventListener("click", function (e) {
-  if (!hamburger.contains(e.target) && !navbarnav.contains(e.target))
+document.addEventListener('click', function (e) {
+  if (!hamburger.contains(e.target) && !navbarnav.contains(e.target)) {
     navbarnav.classList.remove("active");
+}
 });
