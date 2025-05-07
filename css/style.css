@@ -27,7 +27,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.4rem 8%;
+  padding: 1.5rem 6%;
   background-color: rgba(1, 1, 1, 0.8);
   border-bottom: 1px solid #574331;
   position: fixed;
@@ -88,18 +88,19 @@ body {
 
 /* hero section */
 .hero {
-  min-height: 130vh;
+  min-height: 125vh;
   display: flex;
   align-items: center;
-  background-image: url('../img/wongliyo-ngertiopo.jpeg.jpg');
+  background-image: url('../img/iyo-hoo.jpeg.jpg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
-
+  -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0)) ;
+  mask-image: linear-gradient(rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0)) ;
 }
 
-.hero::after {
+/*.hero::after {
   content: '';
   display: block;
   position: absolute;
@@ -107,12 +108,17 @@ body {
   height: 30%;
   bottom: 0;
    background: linear-gradient(0deg, rgba(1, 1, 3, 1) 8%,
-    rgba(255,255,255, 0) 50%)
-}
+    rgba(255,255,255, 0) 50%) 
+} */
 
 .hero .content {
   padding: 1.4rem 7%;
-  max-width: 60rem;
+  /* max-width: 60rem; */
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  top: 160px;
+  
 }
 
 .hero .content h1 {
@@ -120,6 +126,7 @@ body {
   color: #fff;
   text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
   line-height: 1.2;
+  
 }
 
 .hero .content h1 span {
@@ -155,15 +162,15 @@ body {
 .about, 
 .menu, 
 .contact {
-padding: 19rem 7% 1.4rem;
+ padding: 18rem 8% 1.5rem;
 }
 
 .about h2, 
 .menu h2, 
 .contact h2 {
   text-align: center;
-  font-size: 2.6rem;
-  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  margin-bottom: 4.5rem;
 }
 
 .about h2 span, 
@@ -234,7 +241,6 @@ padding: 19rem 7% 1.4rem;
 
 
 .menu .row .menu-card img {
-  border-radius: 50%;
   width: 80%;
 }
 
@@ -325,7 +331,7 @@ footer .links a {
 
 /* media queris */
 /* leptop */
-@media (max-width: 1366px) {
+@media (max-width: 1280px) {
   html {
     font-size: 75%;
   }
